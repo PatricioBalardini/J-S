@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > img {
+  width: 20vw;
+  height: 10vh;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+nav {
+  width: 60%;
+  margin-top: 2%;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  margin-left: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+
+.imgs > img{
+  width: 40px;
+}
+
+footer > h3 {
+    margin-right: 8%;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
