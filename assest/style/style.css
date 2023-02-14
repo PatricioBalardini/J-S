@@ -2,24 +2,30 @@
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  background-color: beige;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 }
 
 header {
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+  background-color: beige;
 }
 
 header > img {
-  width: 20vw;
-  height: 10vh;
-  margin-left: 3%;
-  margin-top: 1%;
+  width: 17%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 0.5%;
+  padding: 2px;
 }
 
 nav {
@@ -34,43 +40,148 @@ nav > a {
   padding: 10px;
 }
 
-main {
+/* main {
   width: 100%;
-}
+} */
 
 main > h1 {
   text-align: center;
+  padding: 0.5%;
+  border-bottom: 1px solid #dee2e6;
+  color: #d90368;
+  background-color: white;
 }
 
 form {
-  width: 100%;
-  margin-left: 1%;
   margin-top: 2%;
   margin-bottom: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer {
   width: 100%;
-  bottom: 0;
+  margin-top: 2%;
+  border-top: 1px solid #dee2e6;
   display: flex;
-  position: absolute;
   justify-content: space-between;
+  background-color: white;
+  position: relative;
+}
+
+.imgs {
+  background-color: white;
   margin-left: 3%;
 }
 
-.imgs > img{
-  width: 40px;
+.imgs > img {
+  margin-top: 4%;
+  padding: 7%;
+  width: 60px;
+  background-color: white;
 }
 
 footer > h3 {
-    margin-right: 8%;
+  padding: 1%;
+  margin-right: 5%;
+  background-color: white;
 }
 
 .cards {
-  width: 100%;
+  width: 97%;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
 }
+
+.card {
+  border: 2px solid #d90368 !important;
+  margin-bottom: 1%;
+}
+
+ul.nav.nav-tabs {
+  border-bottom: none;
+  margin-top: 29px;
+  font-size: 140%;
+}
+
+a.nav-link {
+  color: #d90368;
+  background-color: #d90368;
+}
+
+a.nav-link.active {
+  background-color: #d90368;
+}
+
+img.card-img-top {
+  height: 150px;
+}
+
+input#searcher {
+  width: 30%;
+  border-color: #d90368;
+}
+
+input#inlineCheckbox1,
+input#inlineCheckbox2,
+input#inlineCheckbox3,
+input#inlineCheckbox4,
+input#inlineCheckbox5 {
+  border-color: #d90368;
+}
+
+input#name,
+input#email,
+textarea#mensagge {
+  border: 1px solid #d90368;
+}
+
+input.btn.btn-light {
+  margin-left: -8%;
+  border: 1px solid #d90368;
+}
+
+input.btn.btn-light.btn-c {
+  margin-left: 0%;
+  width: 12%;
+}
+
+.form-contact {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.footer-second {
+  margin-top: 0%;
+}
+
+.main-second {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cards.cards-details {
+  align-content: center;
+}
+
+table {
+  width: 95% !important;
+  display: flex;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.table-title {
+  color: #d90368;
+  text-align: center;
+  font-size: 25px;
+}
+
