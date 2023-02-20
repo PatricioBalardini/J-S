@@ -30,85 +30,111 @@
       />
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" aria-current="page" href="./index.html">
+            - Home -
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
-            >Upcoming Events</a
-          >
+          <a class="nav-link active" href="#"> - Upcoming Events - </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./past-events.html">Past Events</a>
+          <a class="nav-link" href="./past-events.html">- Past Events - </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link" href="./contact.html"> - Contact - </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./details.html">Details</a>
+          <a class="nav-link" href="./details.html"> - Details - </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./stats.html">Stats</a>
+          <a class="nav-link" href="./stats.html"> - Stats - </a>
         </li>
       </ul>
     </header>
     <main>
-      <h1>- Upcoming Events -</h1>
-      <form>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox1"
-            value="option1"
-          />
-          <label class="form-check-label" for="inlineCheckbox1">Category</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox2"
-            value="option2"
-          />
-          <label class="form-check-label" for="inlineCheckbox2">Category</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox3"
-            value="option3"
-          />
-          <label class="form-check-label" for="inlineCheckbox3">Category</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox4"
-            value="option4"
-          />
-          <label class="form-check-label" for="inlineCheckbox4">Category</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="inlineCheckbox5"
-            value="option5"
-          />
-          <label class="form-check-label" for="inlineCheckbox5">Category</label>
-        </div>
-        <input
-          class="form-control"
-          name="searcher"
-          id="searcher"
-          type="text"
-          placeholder="searcher"
-        />
-        <label for="searcher"></label>
-        <input type="submit" value="+" class="btn btn-light" />
-      </form>
+      <div>
+        <h1>- Upcoming Events -</h1>
+      </div>
+      <div class="form-container">
+        <form>
+          <div class="checkbox-container">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >Cinemas</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >Museums</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineCheckbox3"
+                >Concerts</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox4"
+                value="option4"
+              />
+              <label class="form-check-label" for="inlineCheckbox4"
+                >Food Fair</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox5"
+                value="option5"
+              />
+              <label class="form-check-label" for="inlineCheckbox5"
+                >Costume Partys</label
+              >
+            </div>
+          </div>
+          <div class="seacher-bar">
+            <input
+              class="form-control"
+              name="searcher"
+              id="searcher"
+              type="text"
+              placeholder="searcher"
+            />
+            <div class="button-searcher">
+              <label for="searcher"></label>
+              <input
+                title="button-send"
+                type="image"
+                class="input-search"
+                alt="button-search"
+                src="./assest/img/search1.png"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
       <div class="cards">
         <div class="card" style="width: 280px">
           <img
@@ -166,7 +192,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <!-- <div class="card" style="width: 280px">
+        <div class="card" style="width: 280px">
           <img src="./assest/img/cinema.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -207,24 +233,25 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card" style="width: 280px">
-          <img src="./assest/img/marathon.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div> -->
       </div>
     </main>
-    <footer>
-      <div class="imgs">
-        <img src="./assest/img/instragram.png" alt="instragram" />
-        <img src="./assest/img/facebook.png" alt="facebook" />
-        <img src="./assest/img/whatsapp.png" alt="whatsapp" />
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <div class="imgs">
+          <img src="./assest/img/instragram.png" alt="instragram" />
+          <img src="./assest/img/facebook.png" alt="facebook" />
+          <img src="./assest/img/whatsapp.png" alt="whatsapp" />
+        </div>
       </div>
       <h3>Cohort</h3>
     </footer>
