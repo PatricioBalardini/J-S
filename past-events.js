@@ -1,7 +1,7 @@
-const cardsContainer = document.getElementById("upCaming");
+const cardsContainer = document.getElementById("past");
 
-const dateEventsUpCaming = events.filter(
-  (cardDate) => cardDate.date > "2022 - 09 - 01"
+const dateEventsPast = events.filter(
+  (cardDate) => cardDate.date < "2022 - 09 - 01"
 );
 
 function createCard(arrayEvents) {
@@ -25,6 +25,6 @@ function createCard(arrayEvents) {
   return cards;
 }
 
-let cardsEvents = createCard(dateEventsUpCaming);
+let cardsEvents = createCard(dateEventsPast);
 
 cardsContainer.innerHTML = cardsEvents;

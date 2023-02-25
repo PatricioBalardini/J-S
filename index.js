@@ -1,8 +1,4 @@
-
 const cardsContainer = document.getElementById("cards");
-
-//const cardsPast = documente.getElementById("past");
-//const cardsUpCaming = documente.getElementById("upCaming");
 
 function createCard(arrayEvents) {
   let cards = "";
@@ -18,25 +14,13 @@ function createCard(arrayEvents) {
                    <p class="card-capacity">Capacity: ${event.capacity}</p>
                    <p class="card-estimate">Estimate: ${event.assistance}</p>
                    <p class="card-price">$ ${event.price}</p>
-                   <a href="#" class="btn btn-primary">Buy</a>
+                   <a href="./details.html" class="btn btn-primary">More Info</a>
                  </div>
               </div> `;
   }
   return cards;
 }
 
-let cardsEvents = createCard(events)
+let cardsEvents = createCard(events);
 
 cardsContainer.innerHTML = cardsEvents;
-
-
-// document.getElementById
-// document.getElementsByTagName
-// document.getElementsByClassName
-// document.querySelector
-// document.querySelectorAll
-
-// if Date > 2022-01-01
-//return upcaming
-//if Date < 2022-01-1
-//return past
