@@ -21,6 +21,8 @@ function createCard(arrayEvents) {
   return cards;
 }
 
-let cardsEvents = createCard(events);
+let cardsEvents = createCard(data.events);
 
 cardsContainer.innerHTML = cardsEvents;
+
+
