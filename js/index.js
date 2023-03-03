@@ -1,6 +1,9 @@
 const cardsContainer = document.getElementById("cards");
 
+const searcher = document.getElementById("searcher");
+
 function createCard(arrayEvents) {
+  cardsContainer.innerHTML = "";
   let cards = "";
   for (const event of arrayEvents) {
     cards += `<div class="card" style="width: 280px">
@@ -25,4 +28,15 @@ let cardsEvents = createCard(data.events);
 
 cardsContainer.innerHTML = cardsEvents;
 
+searcher.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let cardsFilter = data.events.name.filter((name) =>
+    name.includes(searcher.value)
+  );
 
+  createCard(cardsFilter);
+});
+
+console.log(searcher);
+
+// e.preventDefault();

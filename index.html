@@ -28,37 +28,41 @@
   </head>
   <body>
     <header>
-      <img
-        src="./assest/img/logo-amazing-events.png"
-        alt="logo-amazing-events"
-      />
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"> - Home - </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./up-coming-events.html">
-            - Upcoming Events -
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./past-events.html">- Past Events - </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./details.html"> - Details - </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./stats.html"> - Stats - </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html"> - Contact - </a>
-        </li>
-      </ul>
-    </header>
-    <main>
-      <div>
+      <div class="header">
+        <img
+          src="./assest/img/logo-amazing-events.png"
+          alt="logo-amazing-events"
+        />
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              - Home -
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./up-coming-events.html">
+              - Upcoming Events -
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./past-events.html">- Past Events - </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./details.html"> - Details - </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./stats.html"> - Stats - </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html"> - Contact - </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-category">
         <h1>- Home -</h1>
       </div>
+    </header>
+    <main>
       <div class="form-container">
         <form>
           <div class="checkbox-container">
@@ -136,23 +140,25 @@
               >
             </div>
           </div>
-          <div class="seacher-bar">
-            <input
-              class="form-control"
-              name="searcher"
-              id="searcher"
-              type="text"
-              placeholder="searcher"
-            />
-            <div class="button-searcher">
-              <label for="searcher"></label>
+          <div class="searcher">
+            <div class="searcher-bar">
               <input
-                title="button-send"
-                type="image"
-                class="input-search"
-                alt="button-search"
-                src="./assest/img/search1.png"
+                class="form-control"
+                name="searcher"
+                id="searcher"
+                type="text"
+                placeholder="searcher"
               />
+              <div class="button-searcher">
+                <label for="searcher"></label>
+                <input
+                  title="button-send"
+                  type="image"
+                  class="input-search"
+                  alt="button-search"
+                  src="./assest/img/search1.png"
+                />
+              </div>
             </div>
           </div>
         </form>
