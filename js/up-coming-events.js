@@ -10,11 +10,7 @@ function createCard(arrayEvents) {
                    <h5 class="card-title">${event.name}</h5>
                    <p class="card-category">${event.category}</p>
                    <p class="card-text">${event.description}</p>
-                   <p class="card-date">Date: ${event.date}</p>
                    <p class="card-place">Place: ${event.place}</p>
-                   <p class="card-capacity">Capacity: ${event.capacity}</p>
-                   <p class="card-estimate">Estimate: ${event.assistance}</p>
-                   <p class="card-price">$ ${event.price}</p>
                    <a href="./details.html" class="btn btn-primary">More Info</a>
                  </div>
               </div> `;
