@@ -6,8 +6,6 @@ const events = data.events;
 
 function getFormData(form) {
   const formData = new FormData(form);
-
-  // ...or output as an object
   return Object.fromEntries(formData);
 }
 
@@ -17,7 +15,6 @@ filterForm.addEventListener("submit", function (e) {
   const selectedCategories = Object.keys(formData).filter(
     (key) => key !== "searcher"
   );
-
   const searchValue = formData.searcher.toLowerCase().trim();
   const cardsFilter = events.filter((event) => {
     const isCategoryInclude = selectedCategories.length
@@ -32,7 +29,7 @@ function createCard(arrayEvents) {
   cardsContainer.innerHTML = "";
   let cards = "";
   for (const event of arrayEvents) {
-    cards += `<div class="card" style="width: 280px">
+    cards += `<div class="card" style="width: 240px">
                 <img src="${event.image}" class="card-img-top" alt="..." />
                  <div class="card-body">
                    <h5 class="card-title">${event.name}</h5>
@@ -52,3 +49,9 @@ createCard(events);
 // } else {
 // isCategoryIncluded = true;
 // }
+
+//FormData(): permiten compilar un conjunto de pares clave/valor para enviar mediante XMLHttpRequest.
+//Object.fromEntries(): transforma una lista de pares con [clave-valor] en un objeto.
+//Object.keys(): devuelve un arreglo de propiedades enumerables propias de un objeto dado.
+//Event.target: es una referencia al objeto en el cual se lanzo el evento.
+//

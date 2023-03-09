@@ -1,9 +1,37 @@
 const cardsContainer = document.getElementById("past");
 
+const filterForm = document.getElementById("form-filters");
+
+const events = data.events;
+
+const currentDate = data.currentDate;
+
+function getFormData(form) {
+  const formData = new FormData(form);
+  return Object.fromEntries(formData);
+}
+
+filterForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const formData = getFormData(e.target);
+  const selectedCategories = Object.keys(formData).filter(
+    (key) => key !== "searcher"
+  );
+  const searchValue = formData.searcher.toLowerCase().trim();
+  const cardsFilter = events.filter((event) => {
+    const isCategoryInclude = selectedCategories.length
+      ? selectedCategories.includes(event.category)
+      : true;
+    return event.name.toLowerCase().includes(searchValue) && isCategoryInclude;
+  });
+  createCard(cardsFilter);
+});
+
 function createCard(arrayEvents) {
+  cardsContainer.innerHTML = "";
   let cards = "";
   for (const event of arrayEvents) {
-    if (Date.parse(event.date) < Date.parse(data.currentDate)) {
+    if (Date.parse(event.date) < Date.parse(currentDate)) {
       cards += `<div class="card" style="width: 280px">
                 <img src="${event.image}" class="card-img-top" alt="..." />
                  <div class="card-body">
@@ -11,14 +39,12 @@ function createCard(arrayEvents) {
                    <p class="card-category">${event.category}</p>
                    <p class="card-text">${event.description}</p>
                    <p class="card-place">Place: ${event.place}</p>
-                   <a href="./details.html" class="btn btn-primary">More Info</a>
+                   <a href="/pages/details.html?id=${event.id}" class="btn btn-primary">More Info</a>
                  </div>
               </div> `;
     }
   }
-  return cards;
+  cardsContainer.innerHTML = cards;
 }
 
-let cardsEvents = createCard(data.events);
-
-cardsContainer.innerHTML = cardsEvents;
+createCard(events);

@@ -89,6 +89,15 @@ label {
   margin-left: 2%;
 }
 
+.main-img {
+  width: 100%;
+  opacity: 0.1;
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+  position: absolute;
+}
+
 .form-container {
   display: flex;
   margin-left: 3%;
@@ -125,7 +134,6 @@ label {
 .cards.cards-details {
   align-content: center;
   justify-content: center;
-  padding: 8.8%;
 }
 
 .card {
@@ -280,27 +288,14 @@ input#party-checkbok {
   background-color: darkgray !important;
 }
 
-input#inlineCheckbox1,
-input#inlineCheckbox2,
-input#inlineCheckbox3,
-input#inlineCheckbox4,
-input#inlineCheckbox5,
-input#inlineCheckbox6,
-input#inlineCheckbox7 {
-  border-color: hotpink;
-  transition: 1s;
-  width: 20px;
-  height: 20px;
-  background-color: darkgray !important;
-}
 
-input#inlineCheckbox1:hover,
-input#inlineCheckbox2:hover,
-input#inlineCheckbox3:hover,
-input#inlineCheckbox4:hover,
-input#inlineCheckbox5:hover,
-input#inlineCheckbox6:hover,
-input#inlineCheckbox7:hover {
+input#food:hover,
+input#museum:hover,
+input#concert:hover,
+input#book:hover,
+input#race:hover,
+input#cinema:hover,
+input#party:hover {
   transform: scale(1.3);
 }
 
