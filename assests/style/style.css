@@ -253,13 +253,14 @@ button {
   background-repeat: no-repeat;
   /* height: 100%; */
   /* width: 100%; */
-  /* background-size: 50px 50px; */
+  background-size: 80%;
   background-position: center;
   border: 1px solid hotpink;
   border-radius: 5px !important;
-  /* background-color: darkgray !important; */
+  background-color: darkgray !important;
   padding: 2%;
   margin-left: 1%;
+  cursor: pointer;
 }
 
 .button-search {
@@ -286,6 +287,7 @@ input#party-checkbok {
   width: 20px;
   height: 20px;
   background-color: darkgray !important;
+  cursor: pointer;
 }
 
 
@@ -531,6 +533,13 @@ svg.bi,
 
   .events {
     margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .checkbox-container {
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 
