@@ -21,7 +21,7 @@ filterForm.addEventListener("submit", function (e) {
   const cardsFilter = events.filter((event) => {
     const isCategoryInclude = selectedCategories.length
       ? selectedCategories.includes(event.category)
-      : true;
+      : true && selectedCategories;
     return event.name.toLowerCase().includes(searchValue) && isCategoryInclude;
   });
   createCard(cardsFilter);

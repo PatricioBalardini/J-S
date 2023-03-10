@@ -9,17 +9,19 @@ function getFormData(form) {
   return Object.fromEntries(formData);
 }
 
+
 filterForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const formData = getFormData(e.target);
   const selectedCategories = Object.keys(formData).filter(
     (key) => key !== "searcher"
-  );
+    );
+    console.log(formData);
   const searchValue = formData.searcher.toLowerCase().trim();
   const cardsFilter = events.filter((event) => {
     const isCategoryInclude = selectedCategories.length
       ? selectedCategories.includes(event.category)
-      : true;
+      : true && selectedCategories;
     return event.name.toLowerCase().includes(searchValue) && isCategoryInclude;
   });
   createCard(cardsFilter);
