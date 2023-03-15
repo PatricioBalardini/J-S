@@ -89,9 +89,9 @@ label {
   margin-left: 2%;
 }
 
-label.button-searcher {
+/* label.button-searcher {
   margin-left: -21%;
-}
+} */
 
 .main-img {
   width: 100%;
@@ -243,18 +243,31 @@ input#searcher {
 button {
   background-image: url(/assests/img/search.png);
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 22%;
   background-position: center;
   border: 1px solid hotpink;
   border-radius: 5px !important;
   background-color: darkgray !important;
-  padding: 2%;
+  padding: 6%;
   margin-left: 1%;
   cursor: pointer;
+  width: 35%;
 }
 
 button {
   transition: 1s;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 30%;
+}
+
+label.button-searcher {
+  margin-left: 0%;
 }
 
 button:hover {
@@ -406,6 +419,9 @@ svg.bi,
   .searcher {
     margin-right: 2%;
   }
+  .button {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -417,6 +433,9 @@ svg.bi,
     width: 9%;
   }
 
+  .button {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 790px) {
@@ -440,18 +459,7 @@ svg.bi,
 
   label {
     font-size: 18px;
-    margin-left: 3%;
-  }
-
-  label.button-searcher {
-    margin-top: 2%;
-}
-
-  input.btn.btn-light {
-    position: absolute;
-    padding: 0px 7px;
-    margin-left: 35%;
-    margin-top: 13%;
+    margin-left: 6%;
   }
 
   input#searcher {
@@ -502,14 +510,6 @@ svg.bi,
     width: 4%;
   }
 
-  .button-send {
-    width: 20%;
-  }
-
-  button.button-search {
-    padding: 1.2%;
-  }
-
   .searcher {
     flex-direction: column;
   }
@@ -521,8 +521,16 @@ svg.bi,
     justify-content: center;
   }
 
+  button {
+    padding: 50%;
+  }
+
+  .button {
+    width: 10%;
+  }
+
   .checkbox-container {
-    width: 95%;
+    width: 98%;
     flex-wrap: nowrap;
   }
 
@@ -540,10 +548,16 @@ svg.bi,
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 655px) {
   .checkbox-container {
     width: 100%;
     flex-wrap: wrap;
+  }
+  button {
+    padding: 15%;
+  }
+  form {
+    margin-left: 2%;
   }
 }
 
@@ -561,6 +575,7 @@ svg.bi,
     width: 100%;
     font-size: 11px;
     margin-top: 2%;
+    margin-left: 0%;
   }
 
   ul.nav.nav-tabs {
@@ -698,10 +713,17 @@ svg.bi,
   .searcher-bar {
     justify-content: center;
   }
+
+  button {
+    padding: 20%;
+  }
 }
 
 @media only screen and (max-width: 420px) {
   ul.nav.nav-tabs {
     font-size: 60%;
+  }
+  button {
+    padding: 25%;
   }
 }

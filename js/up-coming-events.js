@@ -1,10 +1,10 @@
+import { getData } from "./data.js";
+
 const cardsContainer = document.getElementById("upCaming");
 
 const filterForm = document.getElementById("form-filters");
 
-const events = data.events;
-
-const currentDate = data.currentDate;
+let { currentDate, events } = await getData();
 
 function getFormData(form) {
   const formData = new FormData(form);
