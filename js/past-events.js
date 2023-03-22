@@ -39,7 +39,7 @@ function createCard(arrayEvents) {
                    <p class="card-category">${event.category}</p>
                    <p class="card-text">${event.description}</p>
                    <p class="card-place">Place: ${event.place}</p>
-                   <a href="/pages/details.html?id=${event.id}" class="btn btn-primary">More Info</a>
+                   <a href="/pages/details.html?id=${event._id}" class="btn btn-primary">More Info</a>
                  </div>
               </div> `;
     }

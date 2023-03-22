@@ -6,12 +6,14 @@ const queryString = location.search;
 
 const params = new URLSearchParams(queryString);
 
-const id = params.get("id");
+const id = parseInt(params.get("id"));
 
-const details = events.find((event) => event._id == id);
+
+
+const details = events.find((event) => event._id === id);
 
 const card = document.querySelector(".cards");
-card.innerHTML = `<div class="card" style="width: 280px">
+card.innerHTML = `<div class="card" style="width: 320px">
                   <img src="${details.image}" class="card-img-top" alt="..." />
                    <div class="card-body">
                      <h5 class="card-title">${details.name}</h5>
