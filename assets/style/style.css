@@ -235,7 +235,7 @@ input#searcher {
 }
 
 button {
-  background-image: url(/assests/img/search.png);
+  background-image: url(/assets/img/search.png);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: center;
@@ -350,7 +350,7 @@ table {
 }
 
 tr {
-  color:hotpink;
+  color: hotpink;
   text-align: center;
 }
 
@@ -407,7 +407,7 @@ svg.bi,
 }
 
 ul {
-  color:hotpink;
+  color: hotpink;
 }
 
 /* --- MOBILE VERSIONS ---- */

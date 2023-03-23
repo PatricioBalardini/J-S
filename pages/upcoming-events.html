@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assests/style/style.css" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
@@ -12,7 +12,7 @@
     <link
       rel="icon"
       type="image/jpg"
-      href="/assests/img/favicon-amazing-events.ico"
+      href="../assets/img/favicon-amazing-events.ico"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -26,12 +26,12 @@
     <header>
       <div class="header">
         <img
-          src="/assests/img/logo-amazing-events.png"
+          src="../assets/img/logo-amazing-events.png"
           alt="logo-amazing-events"
         />
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/index.html">
+            <a class="nav-link" aria-current="page" href="../index.html">
               - Home -
             </a>
           </li>
@@ -39,18 +39,16 @@
             <a class="nav-link active" href="#"> - Upcoming Events - </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pages/past-events.html"
-              >- Past Events -
-            </a>
+            <a class="nav-link" href="./past-events.html">- Past Events - </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pages/details.html"> - Details - </a>
+            <a class="nav-link" href="./details.html"> - Details - </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pages/stats.html"> - Stats - </a>
+            <a class="nav-link" href="./stats.html"> - Stats - </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pages/contact.html"> - Contact - </a>
+            <a class="nav-link" href="./contact.html"> - Contact - </a>
           </li>
         </ul>
       </div>
@@ -69,7 +67,7 @@
                 id="food-checkbok"
                 name="Food"
               />
-              <label class="form-check-label" for="inlineCheckbox1">Food</label>
+              <label class="form-check-label" for="food-checkbok">Food</label>
             </div>
             <div class="form-check form-check-inline">
               <input
@@ -78,7 +76,7 @@
                 id="museum-checkbok"
                 name="Museum"
               />
-              <label class="form-check-label" for="inlineCheckbox2"
+              <label class="form-check-label" for="museum-checkbok"
                 >Museum</label
               >
             </div>
@@ -89,7 +87,7 @@
                 id="concert-checkbok"
                 name="Concert"
               />
-              <label class="form-check-label" for="inlineCheckbox3"
+              <label class="form-check-label" for="concert-checkbok"
                 >Concert</label
               >
             </div>
@@ -100,7 +98,7 @@
                 id="race-checkbok"
                 name="Race"
               />
-              <label class="form-check-label" for="inlineCheckbox4">Race</label>
+              <label class="form-check-label" for="race-checkbok">Race</label>
             </div>
             <div class="form-check form-check-inline">
               <input
@@ -109,7 +107,7 @@
                 id="book-checkbok"
                 name="Books"
               />
-              <label class="form-check-label" for="inlineCheckbox5">Book</label>
+              <label class="form-check-label" for="book-checkbok">Book</label>
             </div>
             <div class="form-check form-check-inline">
               <input
@@ -118,7 +116,7 @@
                 id="cinema-checkbok"
                 name="Cinema"
               />
-              <label class="form-check-label" for="inlineCheckbox6"
+              <label class="form-check-label" for="cinema-checkbok"
                 >Cinema</label
               >
             </div>
@@ -129,23 +127,10 @@
                 id="party-checkbok"
                 name="Party"
               />
-              <label class="form-check-label" for="inlineCheckbox7"
-                >Party</label
-              >
-              
-            </div>
-            <div class="button">
-              <label class="button-searcher" for="searcher"></label>
-              <button
-                title="button-send"
-                type="submit"
-                class="button-search"
-                alt="button-search"
-              ></button>
+              <label class="form-check-label" for="party-checkbok">Party</label>
             </div>
           </div>
           <div class="searcher">
-            
             <div class="searcher-bar">
               <input
                 class="form-control"
@@ -154,6 +139,14 @@
                 type="text"
                 placeholder="searcher"
               />
+              <div class="button">
+                <label class="button-searcher" for="searcher"></label>
+                <button
+                  title="button-send"
+                  type="submit"
+                  class="button-search"
+                ></button>
+              </div>
             </div>
           </div>
         </form>
@@ -173,9 +166,9 @@
           </svg>
         </a>
         <div class="imgs">
-          <img src="/assests/img/instragram.png" alt="instragram" />
-          <img src="/assests/img/facebook.png" alt="facebook" />
-          <img src="/assests/img/whatsapp.png" alt="whatsapp" />
+          <img src="../assets/img/instragram.png" alt="instragram" />
+          <img src="../assets/img/facebook.png" alt="facebook" />
+          <img src="../assets/img/whatsapp.png" alt="whatsapp" />
         </div>
       </div>
       <h3>Cohort</h3>
@@ -186,6 +179,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="/js/up-coming-events.js"></script>
+    <script type="module" src="../js/upcoming-events.js"></script>
   </body>
 </html>
